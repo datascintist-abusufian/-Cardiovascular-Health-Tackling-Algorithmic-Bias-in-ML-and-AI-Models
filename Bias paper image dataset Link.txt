@@ -1,0 +1,5 @@
+https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge
+https://www.kaggle.com/datasets/vivekprajapati2048/rsnacardiacdetectionlabels
+
+
+
