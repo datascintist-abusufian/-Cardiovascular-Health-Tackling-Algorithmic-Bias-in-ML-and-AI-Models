@@ -2,6 +2,7 @@ https://www.kaggle.com/competitions/rsna-pneumonia-detection-challenge
 https://www.kaggle.com/datasets/vivekprajapati2048/rsnacardiacdetectionlabels
 
 https://zenodo.org/records/10781134
+https://www.cardiacatlas.org/amrg-cardiac-atlas/
 
 
 
