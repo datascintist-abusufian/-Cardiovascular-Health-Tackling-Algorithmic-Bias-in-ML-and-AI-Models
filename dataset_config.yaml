@@ -1,0 +1,40 @@
+# YOLOv5-compatible format
+train: /content/heart_dataset_sup/heart_dataset/images/train
+val: /content/heart_dataset_sup/heart_dataset/images/val
+
+nc: 3  # Number of classes
+names: ['normal', 'abnormal', 'serious']  # Class names
+
+# Hyperparameters for augmentation and training fine-tuning
+hyp:
+  lr0: 0.01           # Initial learning rate
+  lrf: 0.01           # Final learning rate (0.01 for linear decay to lr0)
+  momentum: 0.937     # SGD momentum
+  weight_decay: 0.0005 # Optimizer weight decay
+  warmup_epochs: 3.0  # Warmup period
+  warmup_momentum: 0.8
+  warmup_bias_lr: 0.1
+  
+  # Box, Class, and Object losses
+  box: 0.05
+  cls: 0.5
+  cls_pw: 1.0
+  obj: 1.0
+  obj_pw: 1.0
+  iou_t: 0.2          # IoU threshold for objectness score
+  anchor_t: 4.0       # Anchor-matching threshold
+  
+  # Augmentation Hyperparameters
+  hsv_h: 0.015        # HSV hue variation
+  hsv_s: 0.8          # HSV saturation variation
+  hsv_v: 0.6          # HSV brightness variation
+  flipud: 0.2         # Flip upside down
+  fliplr: 0.6         # Flip left-right
+  degrees: 0.0        # Rotate
+  translate: 0.2      # Translate
+  scale: 0.6          # Scale
+  shear: 0.0          # Shear
+  perspective: 0.0    # Perspective
+  mosaic: 1.0         # Mosaic augmentation
+  mixup: 0.0          # Mixup augmentation
+  copy_paste: 0.0     # Copy-paste augmentation
