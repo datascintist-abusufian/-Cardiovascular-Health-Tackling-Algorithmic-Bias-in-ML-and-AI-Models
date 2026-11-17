@@ -2,6 +2,12 @@
 
 Experiments on fairness and explainability in cardiovascular AI. The repository covers a tabular risk model and image-based cardiac detection models. It audits them for subgroup bias, applies bias mitigation and explains predictions with LIME, SHAP and Grad-CAM.
 
+## Block diagram
+
+![Pipeline block diagram: data sources, models, fairness audit and mitigation, explainability and evaluation](docs/figures/pipeline_block_diagram.png)
+
+**Figure 1.** Pipeline overview. Fairness is audited on the tabular risk model for two protected attributes (gender and smoking status) with AIF360, using disparate impact and equal opportunity difference. Adversarial debiasing is then applied and the metrics are compared with the plain model.
+
 ## Data
 
 | Data | Source | In repo |
