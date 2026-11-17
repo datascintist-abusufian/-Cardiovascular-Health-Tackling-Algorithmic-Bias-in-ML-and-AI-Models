@@ -4,9 +4,9 @@ Experiments on fairness and explainability in cardiovascular AI. The repository 
 
 ## Block diagram
 
-![Pipeline block diagram: data sources, models, fairness audit and mitigation, explainability and evaluation](docs/figures/pipeline_block_diagram.png)
+![Block diagram: input data, model, analysis and output for tabular, X-ray, MRI and CT data](docs/figures/pipeline_block_diagram.png)
 
-**Figure 1.** Pipeline overview. Fairness is audited on the tabular risk model for two protected attributes (gender and smoking status) with AIF360, using disparate impact and equal opportunity difference. Adversarial debiasing is then applied and the metrics are compared with the plain model.
+**Figure 1.** Input to output for each data type. Row 1: tabular risk data → random forest and adversarial debiasing → fairness audit (gender, smoking) with LIME/SHAP → CVD prediction and fairness report. Row 2: chest X-ray → ResNet-18 → heart bounding box. Row 3: cardiac MRI → YOLOv5m → cardiac structure boxes. Row 4: calcium-scoring CT → unsupervised segmentation → segmented heart. Thumbnails are real samples from the datasets and notebooks; dashed boxes show output formats.
 
 ## Data
 
